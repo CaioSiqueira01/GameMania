@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #146DF1;
+    height: 117,8px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.posicionamento-header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px;
+    justify-content: space-between; 
+    text-decoration: none;
+    color: white;
+}
+
+.barras {
+    width: 50px;
+    display: none;
+}
+
+.categorias-computadores {
+    display: flex;
+    height: 935,65px;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: blue;
+    padding: 10px;
+    backface-visibility: initial;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    
+}
+.produtos button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.rodape {
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #146DF1;
+}
+
+.texto-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-top: 30px;
+}
+
+.icones-rodape {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:1200px) {
+    
+    .container-grid {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    .barras {
+        display: inline-flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100px;
+        background-color: green;
+        position: absolute;
+        top: 0;
+        right: 70px;
+    }
+
+    .texto-rodape h4{
+        padding: 10px;
+        height: 120px;
+    }
+
+    .icones-rodape {
+        display: none;
+    }
+}

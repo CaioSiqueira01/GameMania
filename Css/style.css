@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #146DF1;
+    height: 117,8px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.posicionamento-header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px;
+    justify-content: space-between; 
+    text-decoration: none;
+    color: white;
+}
+
+.barras {
+    width: 50px;
+    display: none;
+}
+
+.banner {
+    background-image: url(../img/Banner.png);
+    height: 492px;
+    background-repeat: no-repeat;
+}
+
+.itens-banner {
+    height: 140%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.texto-banner {
+    position: absolute;
+    width: 900px;
+    color: white;
+    text-align: center;
+}
+
+.secao-categorias {
+    background-color: #31F444;
+    height: 450px;
+}
+form {
+    display: flex;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
+
+form input, form button {
+    border-width: 20px;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+    width: 40%;
+}
+
+form button {
+    cursor: pointer;
+    background: none;
+    color: whitesmoke;
+    width: 50px;
+}
+
+form button:hover {
+    background-color: whitesmoke;
+    color: white;
+
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos img {
+    width: 150px;
+}
+
+.secao-vendidos {
+    height: 100%;
+    height: 1420px;
+    background-color: white;
+}
+
+.secao-vendidos button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.secao-vendidos button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.produto1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.produto1 a {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+.postion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.produto2 a {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+.position2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.produto3 a {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.position3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.produto4 a {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.position4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.anuncio-pro {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.position-pro a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    width: 1086px;
+    height: 82px;
+    left: 200px;
+    top: 2200px;
+}
+
+
+.rodape {
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #146DF1;
+}
+
+.texto-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-top: 30px;
+}
+
+.icones-rodape {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .container-grid {
+        width: 90%                   
+    }
+
+    .secao-categorias {
+        height: 1100px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .produtos {
+        flex-direction: column;
+    }
+
+    .anuncio-pro {
+        display: none;
+    }
+
+    .secao-vendidos {
+        height: 1100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    .barras {
+        display: inline-flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100px;
+        background-color: green;
+        position: absolute;
+        top: 0;
+        right: 60px;
+    }
+
+    .menu-ativo {
+        display: flex;
+    }    
+
+    .banner {
+        width: 100%;
+    }
+
+    .texto-banner {    
+        width: 90%;    
+        margin-left: 20px;
+    }
+
+    .secao-categorias {
+        height: 1100px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .secao-vendidos{
+        height: 800px;
+    }
+
+    .produtos {
+        flex-direction: column;
+    }
+
+    .produto1 a {
+        display: none;
+    }
+
+    .produto2 a {
+        display: none;
+    }
+    .produto3 a {
+        display: none;
+    }
+    .produto4 a {
+        display: none;
+    }
+
+    .anuncio-pro{
+        display: none;
+    }
+
+    .secao-vendidos button {
+        width: 40%;
+    }
+
+    .texto-rodape h4 {
+        padding: 20px;
+        width: 1000px;
+      }
+
+      .icones-rodape {
+          display: none;
+      }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container-grid {
+        width: 90%;
+    }
+    .barras {
+        display: inline-flex;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100px;
+        background-color: green;
+        position: absolute;
+        top: 0;
+        right: 60px;
+    }
+
+    .menu-ativo {
+        display: flex;
+    }
+    
+
+    .menu a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .posicionamento-header{
+        position: relative;
+    }
+
+    .texto-banner {
+        width: 90%;    
+        margin-left: 20px;
+    }
+
+    .secao-categorias {
+        height: 1060px;
+    }
+
+    .secao-vendidos{
+        height: 800px;
+    }
+
+    .produto1 a {
+        display: none;
+    }
+
+    .produto2 a {
+        display: none;
+    }
+    .produto3 a {
+        display: none;
+    }
+    .produto4 a {
+        display: none;
+    }
+    .rodape {
+        height: 300px;
+        flex-direction: column;
+    }
+    .rodape a {
+        display: none;
+    }
+    .texto-rodape h4 {
+        padding: 20px;
+        width: 1000px;
+      }
+}

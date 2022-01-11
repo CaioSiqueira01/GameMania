@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #146DF1;
+    height: 117,8px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.posicionamento-header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px;
+    justify-content: space-between; 
+    text-decoration: none;
+    color: white;
+}
+
+.barras {
+    width: 50px;
+    display: none;
+}
+
+.cadastro {
+    display: flex;
+    height: 935.65px;
+    background-color: #14F152;
+    background-size: cover;
+}
+
+.cadastro-tela {
+    display: flex;
+    position: center;
+    width: 724px;
+    height: 621px;
+    background-image: url(../img/backgroundlogin.png);
+    margin-top: 138.65px;
+    flex-direction: column;
+}
+
+.texto-cadastro {
+    position: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: red;
+}
+
+.email-senha {
+    color: red;
+    position: center;
+    margin-left: 250px;
+    margin-top: 120px;
+}
+
+.boton {
+    position: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.boton button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    
+}
+.boton button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+@media  screen and (max-width:1200px) {
+    .container-grid {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    .barras {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100px;
+        background-color: green;
+        position: absolute;
+        top: 0;
+        right: 70px;
+    }
+
+    .cadastro-tela {
+        width: 300px;
+    }
+
+    .email-senha {
+        margin-left: 50px;
+        color: blue;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .cadastro-tela {
+        width: 200px;
+    }
+
+    .texto-cadastro{
+        margin-left: 30px;
+    }
+
+    .email-senha {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    background-color: #146DF1;
+    height: 117,8px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.posicionamento-header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px;
+    justify-content: space-between; 
+    text-decoration: none;
+    color: white;
+}
+
+.barras {
+    width: 50px;
+    display: none;
+}
+
+.carrinho-compras {
+    display: flex;
+    justify-content: space-between;
+    height: 935,65px;
+    flex-direction: column;
+}
+
+.carrinho-compras h1 {
+    display: flex;
+    background-color: #146DF1;
+    margin-top: 30px;
+    padding: 20px;
+    backface-visibility: initial;
+    justify-content: center;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compra {
+    display: flex;
+    flex-direction: row;
+}
+
+.compra h2 {
+    color: black;
+    margin-left: 50px;
+    height: 50%;
+    background-color: #FF0A0A;
+    padding: 20px;
+}
+
+.boton button{
+    background-color: green;
+    border: none;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.boton button:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.finalizacao button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.finalizacao button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.rodape {
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #146DF1;
+}
+
+.texto-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-top: 30px;
+}
+
+.icones-rodape {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .container-grid {
+        width: 90%;
+    }
+
+    .rodape {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .barras {
+        display: inline-flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100px;
+        background-color: green;
+        position: absolute;
+        top: 0;
+        right: 80px;
+    }
+
+    .texto-rodape h4 {
+        padding: 10px;
+    }
+    
+    .icones-rodape{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    .carrinho-compras {
+        height: 1000px;
+    }
+
+    .compra {
+        flex-direction: column;
+        width: 180px;
+        padding: 10px;
+        align-items: center;
+    }
+    
+    .texto-rodape h4 {
+        height: 160px;
+        padding: 15px;
+    }
+
+}
